@@ -1,0 +1,96 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>com.sandesh</groupId>
+  <artifactId>spring-web-udemy</artifactId>
+  <packaging>war</packaging>
+  <version>0.0.1-SNAPSHOT</version>
+  <name>spring-web-udemy Maven Webapp</name>
+  <url>http://maven.apache.org</url>
+  
+  <properties>
+  	<java.version>1.8</java.version>
+  	<maven.compiler.source>1.8</maven.compiler.source>
+    <maven.compiler.target>1.8</maven.compiler.target>
+    <spring.version>5.1.4.RELEASE</spring.version>
+  </properties>
+  
+  <dependencies>
+  
+  <!-- spring dependencies -->
+  <dependency>
+		<groupId>org.springframework</groupId>
+		<artifactId>spring-core</artifactId>
+		<version>${spring.version}</version>
+	</dependency>
+  
+  	<dependency>
+	    <groupId>org.springframework</groupId>
+	    <artifactId>spring-context</artifactId>
+	    <version>${spring.version}</version>
+	</dependency>
+	
+	<dependency>
+        <groupId>org.springframework</groupId>
+        <artifactId>spring-web</artifactId>
+        <version>${spring.version}</version>
+    </dependency>
+    
+    <dependency>
+		<groupId>org.springframework</groupId>
+		<artifactId>spring-webmvc</artifactId>
+		<version>${spring.version}</version>
+	</dependency>
+	
+	<!-- jsp tags library -->
+	<dependency>
+		<groupId>taglibs</groupId>
+		<artifactId>standard</artifactId>
+		<version>1.1.2</version>
+	</dependency>
+
+	<dependency>
+		<groupId>javax.servlet.jsp.jstl</groupId>
+		<artifactId>jstl-api</artifactId>
+		<version>1.2</version>
+	</dependency>
+	
+	<!-- hibernate entity manager -->
+	<dependency>
+	    <groupId>org.hibernate</groupId>
+	    <artifactId>hibernate-entitymanager</artifactId>
+	    <version>5.4.2.Final</version>
+	</dependency>
+	
+	<!-- hibernate validator -->
+	<dependency>
+	    <groupId>org.hibernate</groupId>
+	    <artifactId>hibernate-validator</artifactId>
+	    <version>6.0.16.Final</version>
+	</dependency>
+	
+	<!-- h2 embedded database -->
+	<dependency>
+	    <groupId>com.h2database</groupId>
+	    <artifactId>h2</artifactId>
+	    <version>1.4.197</version>
+	    <scope>runtime</scope>
+	</dependency>
+	
+	<!-- log4j dependencies -->
+	<dependency>
+       <groupId>org.slf4j</groupId>
+       <artifactId>slf4j-api</artifactId>
+       <version>1.7.5</version>
+   </dependency>
+   <dependency>
+       <groupId>org.slf4j</groupId>
+       <artifactId>slf4j-log4j12</artifactId>
+       <version>1.7.5</version>
+   </dependency>
+
+  </dependencies>
+  <build>
+    <finalName>spring-web-udemy</finalName>
+  </build>
+</project>
